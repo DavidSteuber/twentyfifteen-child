@@ -4,3 +4,6 @@
 # Ignore vim working files
 *.swp
 
+# Ignore reference style.css file from Twenty Fifteen
+twentyfifteen.css
+
