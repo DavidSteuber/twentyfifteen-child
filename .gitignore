@@ -1,0 +1,6 @@
+# Ignore Project File Personal Data and .DS_Store
+.DS_Store
+
+# Ignore vim working files
+*.swp
+

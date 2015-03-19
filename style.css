@@ -1,0 +1,615 @@
+//*
+ Theme Name:   Twenty Fifteen Child
+ Theme URI:    https://www.david-steuber.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       David Steuber
+ Author URI:   https://www.david-steuber.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+/*
+Theme css to fuck up: Twenty Fifteen
+
+For purposes of my sanity, I'm keeping everything in the exact order as the parent
+theme style.css file. Unchanged elements will be deleted of course.
+
+I would like to use Helvetica Neue. Trying to change all the fonts broke labels. I
+am therefore sticking to Noto and Genericons. I will stick with Sans-Serif
+throughout.
+
+The other thing I wish to accomplish is reduction of excessive whitespace:
+
+* Padding
+* Margins
+* Borders
+ 
+Essentially, this file contains deltas.
+Unwanted changes can be fixed by deletion.
+*/
+
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Reset
+ * 2.0 - Genericons
+ * 3.0 - Typography
+ * 4.0 - Elements
+ * 5.0 - Forms
+ * 6.0 - Navigations
+ *   6.1 - Links
+ *   6.2 - Menus
+ * 7.0 - Accessibility
+ * 8.0 - Alignments
+ * 9.0 - Clearings
+ * 10.0 - Header
+ * 11.0 - Widgets
+ * 12.0 - Content
+ *    12.1 - Posts and pages
+ *    12.2 - Post Formats
+ *    12.3 - Comments
+ * 13.0 - Footer
+ * 14.0 - Media
+ *    14.1 - Captions
+ *    14.2 - Galleries
+ * 15.0 - Media Queries
+ *    15.1 - Mobile Large
+ *    15.2 - Tablet Small
+ *    15.3 - Tablet Large
+ *    15.4 - Desktop Small
+ *    15.5 - Desktop Medium
+ *    15.6 - Desktop Large
+ *    15.7 - Desktop X-Large
+ */
+
+
+/**
+ * 1.0 - Reset
+ *
+ * Resetting and rebuilding styles have been helped along thanks to the fine work of
+ * Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+ * along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+ * and Blueprint http://www.blueprintcss.org/
+ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	font-family: "Noto Sans", sans-serif;
+}
+
+article,
+aside,
+details,
+div,
+main,
+nav,
+section {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+/**
+ * 2.0 - Genericons
+ */
+
+/**
+ * 3.0 Typography
+ */
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: "Noto Sans", sans-serif;
+}
+
+blockquote p {
+	margin: 0;
+}
+
+address {
+	margin: 0;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+	font-size: 80%;
+}
+
+pre {
+	border: 0;
+	margin: 0;
+	padding: 1em 1em 1em 2em;
+}
+
+/**
+ * 4.0 Elements
+ */
+
+aside {
+	padding-left: 0 !important;
+	width: 100% !important;
+}
+
+hr {
+	margin: 1px;
+}
+
+ul,
+ol {
+	margin: 0;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin: 0;
+}
+
+dl {
+	margin: 0;
+}
+
+dd {
+	margin: 0;
+}
+
+figure {
+	width: 100% !important;
+}
+
+table {
+	margin: 0;
+}
+
+/**
+ * 5.0 Forms
+ */
+
+.search-form {
+	margin-bottom: 1.5em;
+}
+
+/**
+ * 6.0 Navigations
+ */
+
+
+/**
+ * 6.1 Links
+ */
+
+
+/**
+ * 6.2 Menus
+ */
+
+.main-navigation {
+	margin: 0;
+	pading: 0;
+	border: 0;
+}
+
+.main-navigation li {
+	border: 0;
+}
+
+.main-navigation .page_item_has_children > a,
+.main-navigation .menu-item-has-children > a {
+	padding-right: 1em;
+}
+
+.social-navigation {
+	margin: 0;
+}
+
+.post-navigation a {
+	display: block;
+	padding: 0;
+}
+
+.post-navigation .post-title {
+	font-family: "Noto Sans", sans-serif;
+}
+
+.navigation .post-navigation {
+	margin: 0;
+}
+
+.image-navigation {
+	padding: 0;
+}
+
+.image-navigation .nav-previous:not(:empty),
+.image-navigation .nav-next:not(:empty) {
+	margin: 0;
+}
+
+
+/**
+ * 7.0 Accessibility
+ */
+
+.site .skip-link {
+	padding: 0;
+}
+
+/* Text meant only for screen readers */
+
+/**
+ * 8.0 Alignments
+ */
+
+
+/**
+ * 9.0 Clearings
+ */
+
+/**
+ * 10.0 Header
+ */
+
+.site-header {
+	padding: 0;
+	padding-bottom: 10%;
+	width: 100%;
+}
+
+.site-title {
+	font-weight: 600;
+}
+
+.site-description {
+	margin: 0;
+}
+
+/**
+ * 11.0 Widgets
+ */
+
+.widget {
+	margin: 0;
+	border: 0;
+}
+
+.widget input[type="button"],
+.widget input[type="reset"],
+.widget input[type="submit"] {
+	padding: 0;
+}
+
+.widget input[type="text"],
+.widget input[type="email"],
+.widget input[type="url"],
+.widget input[type="password"],
+.widget input[type="search"],
+.widget textarea {
+	padding: 0.375em;
+}
+
+.widget-title {
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 1.8;
+	font-weight: 600;
+	margin: 1.6em 0 0.5em 0;
+	border: 0;
+	width: 100%;
+}
+
+.widget_calendar caption {
+	margin: 0;
+}
+
+.widget_categories .children,
+.widget_nav_menu .sub-menu,
+.widget_pages .children {
+	border-top: 0;
+	border-top: 0;
+	margin: 0;
+	padding-top: 0;
+}
+
+.widget_archive li,
+.widget_categories li,
+.widget_links li,
+.widget_meta li,
+.widget_nav_menu li,
+.widget_pages li,
+.widget_recent_comments li,
+.widget_recent_entries li {
+        border: 0 !important;
+        padding: 0;
+}
+
+.widget_rss ul:last-child,
+.widget_rss li:last-child {
+	margin: 0;
+}
+
+.textwidget a {
+	border-bottom: 0;
+}
+
+/**
+ * 12.0 Content
+ */
+
+.secondary {
+	padding: 0;
+}
+
+.widget-area {
+	margin: 0;
+}
+
+/**
+ * 12.1 Posts and pages
+ */
+
+.hentry {
+	padding: 0;
+}
+
+.hentry.sticky:not(.has-post-thumbnail) {
+	padding: 0;
+}
+
+.post-thumbnail {
+	margin: 0;
+}
+
+.entry-header {
+	padding: 0;
+}
+
+.entry-content,
+.entry-summary {
+	padding: 0;
+}
+
+.entry-content h1,
+.entry-summary h1,
+.page-content h1,
+.comment-content h1 {
+	margin: 0;
+}
+
+.entry-content h2,
+.entry-summary h2,
+.page-content h2,
+.comment-content h2 {
+	margin: 0;
+}
+
+.entry-content h3,
+.entry-summary h3,
+.page-content h3,
+.comment-content h3 {
+	margin: 0;
+}
+
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-summary h4,
+.entry-summary h5,
+.entry-summary h6,
+.page-content h4,
+.page-content h5,
+.page-content h6,
+.comment-content h4,
+.comment-content h5,
+.comment-content h6 {
+	margin: 0;
+}
+
+.author-info {
+	margin: 0;
+	padding: 0;
+}
+
+.page-header {
+	background-color: #fff;
+	border-bottom: 0;
+	padding: 0;
+}
+
+.page-title {
+	font-family: "Noto Sans", sans-serif;
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+.page-content {
+	padding: 0;
+}
+
+.page-links {
+	font-family: "Noto Sans", sans-serif;
+	margin: 0;
+}
+
+.page-links a,
+.page-links > span {
+	margin: 0;
+}
+
+.entry-attachment {
+	margin: 0;
+}
+
+.entry-caption {
+	padding-top: 0.5em;
+}
+
+/**
+ * 12.2 Post Formats
+ */
+
+.format-aside .entry-title,
+.format-image .entry-title,
+.format-video .entry-title,
+.format-quote .entry-title,
+.format-gallery .entry-title,
+.format-status .entry-title,
+.format-link .entry-title,
+.format-audio .entry-title,
+.format-chat .entry-title {
+	margin: 0;
+}
+
+
+/**
+ * 12.3 Comments
+ */
+
+.comments-area,
+.comment-respond {
+	padding: 0;
+	margin: 0;
+}
+
+.comments-area > :last-child {
+	margin: 0;
+}
+
+.comment-list + .comment-respond,
+.comment-navigation + .comment-respond {
+	padding-top: 1em;
+}
+
+.comments-title,
+.comment-reply-title {
+	font-family: "Noto Sans", sans-serif;
+}
+
+.comments-title {
+	margin: 0;
+}
+
+.comment-list article,
+.comment-list .pingback,
+.comment-list .trackback {
+	padding: 0;
+}
+
+.comment-metadata {
+	margin: 0;
+}
+
+.comment-list .reply a {
+	margin: 0;
+}
+
+.comment-form {
+	padding-top: 0.5em;
+}
+
+.comment-notes,
+.comment-awaiting-moderation,
+.logged-in-as,
+.form-allowed-tags {
+	margin: 0;
+}
+
+.no-comments {
+	padding: 0;
+}
+
+/**
+ * 13.0 Footer
+ */
+
+/**
+ * 14.0 Media
+ */
+
+/**
+ * 14.1 Captions
+ */
+
+
+/**
+ * 14.2 Galleries
+ */
+
+
+/**
+ * 15.0 Media Queries
+ */
+
+/**
+ * 15.1 Mobile Large 620px
+ */
+
+@media screen and (min-width: 38.75em) {
+	.main-navigation {
+                margin: 0 0 1.5em 0;
+	}
+
+	.main-navigation ul {
+		border: 0;
+	}
+
+	.site-main {
+		border-left: 2px transparent;
+		padding: 0;
+	}
+}
+
+/**
+ * 15.2 Tablet Small 740px
+ */
+
+
+/**
+ * 15.3 Tablet Large 880px
+ */
+
+/**
+ * 15.4 Desktop Small 955px
+ */
+
+@media screen and (min-width: 59.6875em) {
+	.main-navigation {
+        	margin: 0 0 1.5em 0;
+	}
+
+	.site-header {
+		margin: 0;
+	}
+
+	.site-main {
+		padding: 0;
+	}
+}
+
+/**
+ * 15.5 Desktop Medium 1100px
+ */
+
+/**
+ * 15.6 Desktop Large 1240px
+ */
+
+/**
+ * 15.7 Desktop X-Large 1403px
+ */
+
+
