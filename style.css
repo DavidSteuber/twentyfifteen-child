@@ -260,6 +260,10 @@ table {
  * 9.0 Clearings
  */
 
+.site-content {
+	float: right;
+}
+
 /**
  * 10.0 Header
  */
