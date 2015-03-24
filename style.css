@@ -602,6 +602,12 @@ table {
 	.site-main {
 		padding: 0;
 	}
+
+	.site-content {
+		float: right;
+                margin-left: 29.4118%;
+                width: 70.5882%;
+	}
 }
 
 /**
